@@ -75,7 +75,7 @@
     "@styled-icons/ionicons-sharp": "^10.34.0",
     "@styled-icons/material-sharp": "^10.34.0",
     "@xstyled/styled-components": "^3.0.1",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "axios-jsonp": "^1.0.4",
     "connected-react-router": "^6.9.1",
     "immer": "^8.0.1",
