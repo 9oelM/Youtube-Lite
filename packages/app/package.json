@@ -78,7 +78,7 @@
     "axios": "^0.21.1",
     "axios-jsonp": "^1.0.4",
     "connected-react-router": "^6.9.1",
-    "immer": "^8.0.1",
+    "immer": "^9.0.6",
     "lodash.debounce": "^4.0.8",
     "lodash.flow": "^3.5.0",
     "nanoid": "^3.1.23",
