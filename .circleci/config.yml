@@ -17,7 +17,7 @@ orbs:
 jobs:
   restore_cache:
     docker: 
-      - image: node:14.17
+      - image: node:17.1
     steps:
       - checkout
       - create_concatenated_package_lock:
@@ -29,7 +29,7 @@ jobs:
             - v3-deps
   lint:
     docker:
-      - image: node:14.17
+      - image: node:17.1
     steps:
       - checkout
       - run:
@@ -42,7 +42,7 @@ jobs:
             npm run lint:ts
   preview_app:
     docker:
-      - image: node:14.17
+      - image: node:17.1
     steps:
       - checkout
       - run:
@@ -57,7 +57,7 @@ jobs:
             npx surge ./packages/app/dist "ytlite-${CIRCLE_PULL_REQUEST##*/}.surge.sh" --token $SURGE_TOKEN
   preview_storybook:
     docker:
-      - image: node:14.17
+      - image: node:17.1
     steps:
       - checkout
       - run:
